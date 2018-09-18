@@ -27,10 +27,10 @@ public class StudentManagement {
     public static void main (String[] args) {
         // TODO:
         Student doanxem = new Student();
-        doanxem.setName("Doan xem 1");
-        doanxem.setId("Doan xem 2");
-        doanxem.setGroup("Doan xem 3");
-        doanxem.setEmail("Doan xem 4");
+        doanxem.setName("Nong Dinh Tuyen");
+        doanxem.setId("17021117");
+        doanxem.setGroup("INT22041");
+        doanxem.setEmail("lllllvkl@gmail.com");
         doanxem.getInfo();
         Student a = new Student();
         a.getInfo();

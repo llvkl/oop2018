@@ -81,6 +81,6 @@ public class Fraction {
         a.divide(b).println();
         System.out.println(a.equals(b));
     }
-
+//test
 
 }

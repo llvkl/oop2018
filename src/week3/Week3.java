@@ -29,10 +29,10 @@ public class Week3 {
         // TODO: Viết chương trình tính chỉ số BMI và in ra kết quả đánh giá
         double BMI = (height/(weight*weight/100/100));
         String a = null;
-        if(BMI<18.5) a = "Gay";
-        if(BMI>=18.5 && BMI<24.99) a = "Binh Thuong";
-        if(BMI>=25 && BMI<29.9) a = "Thua Can";
-        if(BMI>=30) a = "Beo";
+        if(BMI<18.5) a = "Thieu can";
+        if(BMI>=18.5 && BMI<22.99) a = "Binh Thuong";
+        if(BMI>=23 && BMI<24.99) a = "Thua Can";
+        if(BMI>=25) a = "Beo phi";
         return a;
     }
     public static void main (String [] args){

@@ -3,13 +3,20 @@ package week3;
 public class Week3 {
 
     public static int max(int m, int n) {
+        if(m>n) return m;
+        else return n;
         // TODO: Tìm giá trị lớn nhất của hai số nguyên, giá trị trả về của hàm là số lớn nhất
-        return -1;
+
     }
 
     public static int minOfArray(int[] array) {
         // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần tử)
-        return -1;
+        int min=array[0];
+        for(int i=0;i<array.length;i++)
+            if(min > array[i]) {
+                min=array[i];
+            }
+            return min;
     }
 
     /**
@@ -20,6 +27,18 @@ public class Week3 {
      */
     public static String calculateBMI(double weight, double height) {
         // TODO: Viết chương trình tính chỉ số BMI và in ra kết quả đánh giá
-        return null;
+        double BMI = (height/(weight*weight/100/100));
+        String a = null;
+        if(BMI<18.5) a = "Gay";
+        if(BMI>=18.5 && BMI<24.99) a = "Binh Thuong";
+        if(BMI>=25 && BMI<29.9) a = "Thua Can";
+        if(BMI>=30) a = "Beo";
+        return a;
+    }
+    public static void main (String [] args){
+        System.out.println(max(69,96));
+        int[] a = {69,994,345,8,87};
+        System.out.println(minOfArray(a));
+        System.out.println(calculateBMI(165,55));
     }
 }

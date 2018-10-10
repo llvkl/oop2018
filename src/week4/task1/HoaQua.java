@@ -7,3 +7,25 @@
  * @version 0.1
  */
 package week4.task1;
+
+/**
+ * Khoi tao class HoaQua
+ * color mau sac cua hoa qua
+ * cost: gia hoa qua
+ */
+public  class HoaQua{
+    private String Color;
+    private double Cost;
+    public void setColor(String Color) {
+        this.Color = Color;
+    }
+    public String getColor(){
+        return Color;
+    }
+    public void setCost(double Cost){
+        this.Cost=Cost;
+    }
+    public double getCost(){
+        return Cost;
+    }
+}

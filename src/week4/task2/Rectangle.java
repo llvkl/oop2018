@@ -24,6 +24,18 @@ public class Rectangle extends Shape {
         this.length=length;
     }
     public void Rectangle(double widht,double length,String color, boolean filled){
-        this.widht=
+        this.widht=widht;
+        this.length=length;
+        this.setColor((color));
+        this.setFilled(filled);
+    }
+    public double getArea(){
+        return (widht*length);
+    }
+    public double getPerimeter(){
+        return (widht+length)*2;
+    }
+    public String toString(){
+        return (getWidht()+"\n"+getLength());
     }
 }
